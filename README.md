@@ -14,7 +14,7 @@ Press back button on a opened activity - ``` onPause(), onStop(), onDestroy() ``
 So, open app and press back button - 
 ``` onCreate() , onStart(), onResume(), onPause(), onStop(), onDestroy() ```
 
-And open a another activity from notification ``` onPause(), onStop() ``` and press back button to return to app ``` onRestart(), onStart(), onResume() ```
+And open a another activity from notification or pick call ``` onPause(), onStop() ``` and press back button to return to app (if it does or sometime not) ``` onRestart(), onStart(), onResume() ```
 
 
 
