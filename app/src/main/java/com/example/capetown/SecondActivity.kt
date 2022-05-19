@@ -1,48 +1,44 @@
 package com.example.capetown
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
-class MainActivity : AppCompatActivity() {
+class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_second)
 
-        val intent = Intent(this, SecondActivity::class.java);
-        startActivity(intent);
-
-        Log.d("lifecycle callbacks ", "onCreate()");
+        Log.d("lifecycle callbacks  ", " B onCreate()");
     }
 
     override fun onStart() {
         super.onStart()
-        Log.d("lifecycle callbacks ", "onStart()");
+        Log.d("lifecycle callbacks", " B onStart()");
     }
 
     override fun onResume() {
         super.onResume()
-        Log.d("lifecycle callbacks ", "onResume()");
+        Log.d("lifecycle callbacks ", " B onResume()");
     }
 
     override fun onPause() {
         super.onPause()
-        Log.d("lifecycle callbacks ", "onPause()");
+        Log.d("lifecycle callbacks ", " B onPause()");
     }
 
     override fun onStop() {
         super.onStop()
-        Log.d("lifecycle callbacks ", "onStop()");
+        Log.d("lifecycle callbacks ", " B onStop()");
     }
 
     override fun onDestroy() {
         super.onDestroy()
-        Log.d("lifecycle callbacks ", "onDestroy()");
+        Log.d("lifecycle callbacks ", " B onDestroy()");
     }
 
     override fun onRestart() {
         super.onRestart()
-        Log.d("lifecycle callbacks ", "onRestart()");
+        Log.d("lifecycle callbacks ", " B onRestart()");
     }
 }
