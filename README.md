@@ -24,6 +24,7 @@ activity A start activity B
 activity A ```onPause()``` after that activity B ``` onCreate() , onStart(), onResume() ``` after that activity A ```onStop()```
 
 
+#
 ## Bonus tip 
 xmlns: app: and xmlns: Android, Both namespaces mentioned are used in Android app development in layout xml files.
 
