@@ -1,7 +1,7 @@
 # CapeTown
 Lifecycle of Activity and Fragment
 
-When app has a single activity only  
+### When app has a single activity only  
 
 and Activity opens - ``` onCreate() , onStart(), onResume() ```
 
@@ -18,7 +18,7 @@ And open a another activity from notification ``` onPause(), onStop() ``` and pr
 
 
 
-When app has a two activity and activity A and B 
+### When app has a two activity and activity A and B 
 
 activity A start activity B  
 activity a ```onPause()``` after that activity B ``` onCreate() , onStart(), onResume() ``` after that activity a ```onStop()```
