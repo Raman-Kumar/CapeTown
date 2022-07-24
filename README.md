@@ -36,7 +36,7 @@ So, open app and press back button -
 
 #
 ## Bonus tip 
-xmlns: app: and xmlns: Android, Both namespaces mentioned are used in Android app development in layout xml files.
+xmlns:app: and xmlns:android, Both namespaces mentioned are used in Android app development in layout xml files.
 
 xmlns:android namespace is used in order to access and use the attributes which are provided by Android platform.
 
