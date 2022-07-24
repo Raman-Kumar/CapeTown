@@ -18,6 +18,8 @@ class SecondActivity : AppCompatActivity() {
     public fun showDialog(view : View) {
         val newFragment: StartGameDialogFragment = StartGameDialogFragment()
         newFragment.show(supportFragmentManager, "tag")
+
+//        BottomDialogFragment.newInstance(30).show(supportFragmentManager, "dialog")
     }
 
     override fun onStart() {

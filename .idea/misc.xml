@@ -11,6 +11,8 @@
         <entry key="app/src/main/res/layout/activity_second.xml" value="0.30683022635323665" />
         <entry key="app/src/main/res/layout/fragment_a.xml" value="0.35067901611328123" />
         <entry key="app/src/main/res/layout/fragment_b.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/fragment_bottom_dialog_list_dialog.xml" value="0.18885869565217392" />
+        <entry key="app/src/main/res/layout/fragment_bottom_dialog_list_dialog_item.xml" value="0.18885869565217392" />
         <entry key="app/src/main/res/layout/sample_my_view.xml" value="0.18885869565217392" />
       </map>
     </option>
