@@ -23,12 +23,24 @@ And open a another activity from notification or pick call ``` onPause(), onStop
 activity A start activity B  
 activity A ```onPause()``` after that activity B ``` onCreate() , onStart(), onResume() ``` after that activity A ```onStop()```
 
+press back button from activity B to reach A
+activity B ```onPause()``` after that activity A ``` onRestart() , onStart(), onResume() ``` after that activity B ```onStop() onDestroy()```
+
+
+### When app has a activity goes through configuration change i.e rotating the device
+So, open app and press back button - 
+``` onPause(), onStop(), onDestroy() onCreate() , onStart(), onResume(), ```
+
+
+### Open a Dialog or BottomSheet over an activity
+do not call any lifecycle of that activity
+Only calls lifecycle of that Dialog or BottomSheet
 
 #
 ## Bonus tip 
-xmlns: app: and xmlns: Android, Both namespaces mentioned are used in Android app development in layout xml files.
+xmlns:app: and xmlns:android, Both namespaces mentioned are used in Android app development in layout xml files.
 
-xmlns: Android namespace is used in order to access and use the attributes which are provided by Android platform.
+xmlns:android namespace is used in order to access and use the attributes which are provided by Android platform.
 
 xmlns:app( or xmlns:'customname') namespace is used to access the custom attributes which are defined in the application scope. 
 

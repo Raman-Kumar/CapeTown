@@ -1,15 +1,25 @@
 package com.example.capetown
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+
 
 class SecondActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_second)
 
-        Log.d("lifecycle callbacks  ", " B onCreate()");
+        Log.d("lifecycle callbacks  ", " B onCreate()")
+
+    }
+
+    public fun showDialog(view : View) {
+        val newFragment: StartGameDialogFragment = StartGameDialogFragment()
+        newFragment.show(supportFragmentManager, "tag")
+
+//        BottomDialogFragment.newInstance(30).show(supportFragmentManager, "dialog")
     }
 
     override fun onStart() {
