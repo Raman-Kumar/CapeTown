@@ -27,12 +27,14 @@ press back button from activity B to reach A
 activity B ```onPause()``` after that activity A ``` onRestart() , onStart(), onResume() ``` after that activity B ```onStop() onDestroy()```
 
 
-### When app has a activity goes through configration change i.e rotating the device 
+### When app has a activity goes through configuration change i.e rotating the device
 So, open app and press back button - 
 ``` onPause(), onStop(), onDestroy() onCreate() , onStart(), onResume(), ```
 
 
-
+### Open a Dialog or BottomSheet over an activity
+do not call any lifecycle of that activity
+Only calls lifecycle of that Dialog or BottomSheet
 
 #
 ## Bonus tip 
